@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+
+	int sayi=0,kontrol=0,i,kok=0;
+	
+	
+	printf("bir sayi giriniz: ");
+	scanf("%d",&sayi);
+	
+	kok=sqrt(sayi);
+	
+	for(i=2;i<kok;i++){
+		
+		if(sayi%i==0)
+			kontrol++;	
+		
+	}
+	printf("\n");	
+	if(kontrol==0)
+		printf("sayi asaldir...");
+	else
+		printf("sayi asal degildir...");
+		
+	return 0;	
+
+}
